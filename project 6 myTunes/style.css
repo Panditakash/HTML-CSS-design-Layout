@@ -1,0 +1,170 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    
+    line-height: 1.4;
+}
+nav{
+    background-color:rgb(69, 5, 129);
+    display: flex;
+    justify-content:space-around;
+    height: 90px;
+    width: 100%;
+    z-index: 100;
+    color: white;
+    font-size: xx-large;
+    position: fixed;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 30px;
+    font-size: 18px;
+}
+.log{
+    padding: 20px;
+    font-style: bold;
+}
+.back{
+    background-image: url("hero_image.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+.headings{
+     color: white;
+      text-align: center;
+     justify-content: center;
+     padding: 300px;
+     
+}
+.headings h1{
+    font-size: 100px;
+    
+}
+.headings h3{
+    font-size: xx-large;
+}
+.headings p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    
+}
+.music{
+    background-color: blueviolet;
+    color: white;
+    height: 600px;
+    text-align: center;
+    padding: 20px;
+}
+.music p{
+    margin-left: 350px;
+    margin-right:350px ;
+    text-align: left;
+
+}
+.music button{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    height: 40px;
+    width: 150px;
+    border: none;
+}
+.pr{
+    padding-left: 300px;
+    text-align: center;
+}
+.first{
+    position: absolute;
+    top: 1200px;
+    left: 500px;
+}
+.firstimg{
+    height: 400px;
+}
+.secound{
+    text-align: center;
+    
+}
+.secound p{
+    width: 80%;
+    padding: 50px;
+    margin-left: 10%;
+}
+.secound button{
+    background-color: rgb(117, 7, 117);
+    color: white;
+    width: 90px;
+    height: 30px;
+    border: none;
+}
+.thirdimg{
+    height: 700px;
+}
+.third{
+    position: absolute;
+    top: 2250px;
+    left: 450px;
+    
+    
+}
+.fourthimg{
+    background-image: url("video.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;   
+    color: white;
+    text-align: center;
+}
+.fourth{
+    padding: 300px;
+}
+.fifthimg{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+}
+.gift{
+    margin-top: 90px;
+    width: 36%;
+}
+.fifth{
+    margin-top: 90px;
+    margin-right: -500px;
+}
+.fifthimg button{
+    background-color: rgb(52, 7, 95);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.footer{
+    background-color: rgb(41, 4, 75);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+
+}
+.footer ul{
+    
+    padding: 30px;
+    list-style: none;
+    line-height: 1.4;
+    
+}
+
+ 
+
