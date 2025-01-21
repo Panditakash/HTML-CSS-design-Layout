@@ -1,24 +1,22 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 15px;
-    
 }
-.container{
+
+.container {
     background-color: #ccc;
     height: 100vh;
     padding-top: 50px;
 }
-.content{
+
+.content {
     width: 32%;
-    height: 500px;
-   
+    height: 70vh;
     margin-left: 35%;
-   background-color:white;
-   box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    background-color: white;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
     border-radius: 10px;
     padding: 30px;
     padding: 6px 10px;
@@ -26,68 +24,58 @@
     border-radius: 4px;
     font-size: 15px;
     background-color: white;
-    
     box-shadow: rgba(1, 1, 1, 0.1) 4px 3px 5px;
     border-radius: 10px;
-
 }
-.name{
+
+.name {
     display: flex;
-
 }
 
-.lastname{
+.lastname {
     margin-left: 90px;
 }
-.email{
-   display: flex;
+
+.email {
+    display: flex;
 }
 
-
-#jobrole{
-    height:30px;
+#jobrole {
+    height: 30px;
     width: 162%;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
 }
-.jobb{
+
+.jobb {
     margin-left: 90px;
-    
 }
 
-.city{
- 
+.city {
     display: flex;
-    
 }
 
-
-
-.pin{
+.pin {
     margin-left: 90px;
-    
 }
-.dob{
+
+.dob {
     display: flex;
-    
 }
-.cv{
+
+.cv {
     margin-left: 80px;
-    
-    
-
 }
-.cv input{
-    
-    
+
+.cv input {
     padding: 2px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     font-size: 15px;
-    width:50%;
+    width: 50%;
 }
 
-.apply button{
+.apply button {
     margin-top: 25px;
     margin-left: 80%;
     border-color: transparent;
@@ -96,52 +84,177 @@
     width: 80px;
     height: 30px;
 }
-.d{
+
+.d {
     width: 40%;
 }
 
-.content input{
+.content input {
     height: 30px;
     width: 130%;
     background-color: white;
-   
     border-radius: 5px;
     border: 1px solid rgb(204, 204, 204);
-    
 }
-.content h1{
+
+.content h1 {
     font-size: xx-large;
-    
 }
-.adress input{
+
+.adress input {
     width: 97%;
     height: 60px;
-    padding:4px;
+    padding: 4px;
 }
-.head{
+
+.head {
     display: flex;
     margin-top: 20px;
-
 }
-.head h3{
+
+.head h3 {
     margin-top: 7px;
     margin-left: 20px;
 }
-.dob input{
+
+.dob input {
     width: 125%;
 }
+
 input:focus {
     outline-color: red;
 }
+
 .cv input[type="file"] {
-    width: 94%; 
+    width: 94%;
 }
-.move{
+
+.move {
     margin-left: 20px;
 }
-.apply button:hover{
+
+.apply button:hover {
     cursor: pointer;
 }
-input{
-    padding: 5px ;
+
+input {
+    padding: 5px;
+}
+
+/* Mobile (phone) styles */
+@media screen and (max-width: 767px) {
+    .container {
+        padding-top: 20px;
+    }
+
+    .content {
+        width: 90%;
+        margin-left: 5%;
+        padding: 15px;
+    }
+
+    .name, .email, .city, .dob, .cv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lastname, .jobb, .pin {
+        margin-left: 0;
+    }
+
+    #jobrole {
+        width: 100%;
+    }
+
+    .cv input {
+        width: 100%;
+    }
+
+    .apply button {
+        margin-left: 0;
+        width: 20px;
+        height: 40px;
+    }
+
+    .content input {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .adress input {
+        width: 100%;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .head h3 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .dob input {
+        width: 100%;
+    }
+}
+
+/* iPad (tablet) styles */
+@media screen and (max-width: 1864px) {
+    .content {
+        width: 70%;
+        margin-left: 15%;
+        padding: 20px;
+    }
+
+    .name, .email, .city, .dob, .cv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lastname, .jobb, .pin {
+        margin-left: 0;
+    }
+
+    #jobrole {
+        width: 100%;
+    }
+
+    .cv input {
+        width: 100%;
+    }
+
+    .apply button {
+        margin-left: auto;
+        width: 100%;
+        height: 40px;
+    }
+
+    .content input {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .adress input {
+        width: 100%;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .head h3 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .dob input {
+        width: 100%;
+    }
 }

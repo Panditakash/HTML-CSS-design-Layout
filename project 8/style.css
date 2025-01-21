@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Roboto ", sans-serif;
+
+body {
+    font-family: "Roboto", sans-serif;
 }
-nav{
+
+/* Navigation Bar */
+nav {
     background-color: rgba(255, 255, 255, 0.418);
     height: 90px;
     color: black;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap;
+
 }
-.icon{
+
+.icon {
     background-color: blueviolet;
     color: white;
     width: 50px;
@@ -22,97 +31,198 @@ nav{
     font-size: 25px;
     padding: 10px;
     border-radius: 5px;
-    margin-left: 90px;
+    margin-left: 20px;
 }
-.mrkt{
+
+.mrkt {
     background-color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     color: black;
-    margin-left: 30px;
+    margin-left: 20px;
 }
-.para{
+
+.para {
     width: 40%;
     display: flex;
-    margin-left: 200px;
-    justify-content: space-between;
-    font-size: 25px;
-    padding: 12px;
+    margin-left: 20px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    flex-wrap: wrap;
 }
-nav button{
+
+nav button {
     background-color: white;
     color: blueviolet;
     font-weight: 600;
     height: 50px;
     width: 200px;
-    font-size: 25px;
-    margin-left: 200px;
+    font-size: 20px;
+    margin-left: 20px;
     border-radius: 25px;
     border-color: blueviolet;
 }
-.center{
+
+/* Main Content */
+.center {
     display: flex;
-    font-size: 70px;
-    height: 90vh;
-}
-.middlesec{
-    width: 40%;
-    
-}
-.middlesec img{
-    width: 60%;
-    height: 60vh;
-    position: relative;
-    top: 100px;
-    left: 100px;
-}
-.middle{
-    width: 50%;
-    padding: 90px;
-}
-.middle h3{
-    margin-top: 20px;
+    flex-wrap: wrap;
     font-size: 50px;
+    height: auto;
+    padding: 20px;
 }
-.middle p{
-    font-size: 25px;
+
+.middlesec {
+    width: 100%;
+    text-align: center;
+}
+
+.middlesec img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.middle {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.middle h3 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.middle p {
+    font-size: 18px;
     color: rgba(0, 0, 0, 0.445);
 }
-.buttn{
+
+.buttn {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.buttn button{
-    margin-top: 40px;
+
+.buttn button {
+    margin-top: 20px;
     background-color: white;
     color: blueviolet;
     font-weight: 600;
     height: 50px;
-    width: 200px;
-    font-size: 25px;
+    width: 180px;
+    font-size: 20px;
     border-radius: 25px;
     border-color: blueviolet;
 }
-.star{
+
+/* Additional Sections */
+.star {
     color: rgb(157, 255, 0);
     font-size: 25px;
 }
-.two{
-    height: 100px;
+
+.two {
+    height: auto;
     color: black;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
-.middle3{
+
+.middle3 {
     display: flex;
-    justify-content: space-around;
-    font-size: 30px;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
     background-color: rgba(14, 3, 24, 0.575);
-    width: 77%;
-    height: 70px;
-    margin-left: 70px;
-    padding-top: 15px;
+    width: 90%;
+    height: auto;
+    padding: 15px;
     font-weight: bold;
     border-radius: 25px;
+    margin: 20px auto;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .mrkt {
+        font-size: 25px;
+    }
+
+    .para {
+        font-size: 18px;
+        margin-left: 0;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    nav button {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .center {
+        font-size: 40px;
+    }
+
+    .middle h3 {
+        font-size: 30px;
+    }
+
+    .middle p {
+        font-size: 16px;
+    }
+
+    .buttn button {
+        font-size: 18px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        margin-left: 0;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .mrkt {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    nav button {
+        width: 130px;
+        font-size: 16px;
+    }
+
+    .center {
+        font-size: 30px;
+    }
+
+    .middle h3 {
+        font-size: 25px;
+    }
+
+    .middle p {
+        font-size: 14px;
+    }
+
+    .buttn button {
+        font-size: 16px;
+        width: 120px;
+    }
+}

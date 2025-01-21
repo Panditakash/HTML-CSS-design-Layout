@@ -13,7 +13,7 @@ body{
 }
 .content{
     height: 100vh;
-    background-image: url("/images/image1.png");
+    background-image: url("images/image1.png");
     position: relative;
     background-position: center;
     background-attachment: fixed;
@@ -50,7 +50,7 @@ body{
   
 }
 .im2{
-    background-image: url("/images/image2.png");
+    background-image: url("images/image2.png");
     background-attachment: fixed;
     min-height: 400px;
     display: flex;
@@ -73,7 +73,7 @@ body{
   
 }
 .im3{
-    background-image: url("/images/image3.png");
+    background-image: url("images/image3.png");
     background-attachment: fixed;
     min-height: 400px;
     display: flex;
